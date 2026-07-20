@@ -39,6 +39,7 @@
   html {  }
 
   body {
+    padding-top: 60px;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     color: var(--text);
     background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
@@ -198,10 +199,12 @@
 
   /* ===== NAVIGATION ===== */
   .nav-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
-    background: rgba(255,255,255,0.92);
+    background: rgba(255,255,255,0.97);
     backdrop-filter: blur(24px) saturate(180%);
     box-shadow: 0 4px 30px rgba(0,0,0,0.08);
     padding: 1rem 0;
@@ -1500,7 +1503,6 @@
 }
 .hero { height: 500px !important; min-height: 400px !important; }
 .progress-bar { display: none !important; }
-.floating-nav { display: none !important; }
 body { overflow-x: visible !important; }
 
 </style>
