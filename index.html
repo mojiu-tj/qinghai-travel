@@ -1315,19 +1315,41 @@
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
+    body { padding-top: 50px; }
     .hero-stats { gap: 1rem; }
     .stat-item { min-width: 110px; padding: 1rem 1.2rem; }
     .stat-number { font-size: 1.8rem; }
-    .day-header { gap: 1.2rem; }
-    .day-number { width: 70px; height: 70px; }
-    .day-number .day-date { font-size: 1.4rem; }
-    .day-info h2 { font-size: 1.6rem; }
+    .day-section { padding: 2rem 0.8rem; }
+    .day-header { gap: 1rem; margin-bottom: 1.5rem; }
+    .day-number { width: 60px; height: 60px; }
+    .day-number .day-date { font-size: 1.2rem; }
+    .day-number .day-text { font-size: 0.55rem; }
+    .day-info h2 { font-size: 1.2rem; }
+    .route-tag { font-size: 0.75rem !important; }
+    .drive-info { font-size: 0.7rem !important; }
     .gallery { grid-template-columns: 1fr; }
-    .timeline { padding-left: 2rem; }
-    .parallax-divider { height: 250px; }
-    .parallax-divider .overlay-text h3 { font-size: 2rem; }
+    .timeline { padding-left: 1.5rem; }
+    .timeline-item { padding: 1.2rem; margin-bottom: 1.2rem; }
+    .timeline-item::before { left: -1.95rem; width: 12px; height: 12px; top: 1.4rem; }
+    .timeline-thumb { width: 60px; height: 45px; top: 0.8rem; right: 0.8rem; }
+    .timeline-item .timeline-content { padding-right: 70px; }
+    .timeline-content h4 { font-size: 1rem; }
+    .timeline-content p { font-size: 0.9rem; line-height: 1.7; }
+    .time-badge { font-size: 0.75rem; padding: 0.3rem 0.7rem; margin-bottom: 0.6rem; }
+    .meta-tag { font-size: 0.75rem; padding: 0.3rem 0.5rem; }
+    .info-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .info-card { padding: 1.2rem; }
+    .parallax-divider { height: 200px; }
+    .parallax-divider .overlay-text h3 { font-size: 1.5rem; }
     .packing-grid { grid-template-columns: 1fr; }
     .transport-options-3col { grid-template-columns: 1fr; }
+    .nav-bar { padding: 0.6rem 0; }
+    .nav-item { font-size: 0.75rem; padding: 0.3rem 0.6rem; }
+    .route-choice-header { flex-direction: column; gap: 0.5rem; }
+    .route-tab { font-size: 0.8rem; }
+    .hotel-cards { flex-direction: column; }
+    .cost-table { font-size: 0.7rem; }
+    .cost-table td, .cost-table th { padding: 4px 3px; }
   }
 
 /* PRINT OVERRIDE - force everything visible */
