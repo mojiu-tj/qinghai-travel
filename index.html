@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>7.24-7.27 青海线旅行攻略（上海/杭州/广州出发）</title>
 <style>
-  
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -604,7 +603,6 @@
     line-height: 1.8;
     color: var(--text-light);
   }
-
 
   /* Timeline thumbnail */
   .timeline-thumb {
@@ -1271,11 +1269,9 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  
     to { opacity: 1; transform: translateY(0); }
   }
 
-  
     to { opacity: 1; transform: translateX(0); }
   }
 
@@ -1314,7 +1310,6 @@
     box-shadow: 0 0 60px rgba(0,0,0,0.6);
   }
 
-  
     to { opacity: 1; }
   }
 
@@ -1335,147 +1330,6 @@
     .transport-options-3col { grid-template-columns: 1fr; }
   }
 
-/* ===== AMAP DAILY MAP ===== */
-.daily-amap {
-  margin: 1rem 0;
-  background: linear-gradient(135deg, rgba(26,54,93,0.02), rgba(45,106,159,0.04));
-  border-radius: 16px;
-  padding: 1.2rem;
-  border: 1px solid rgba(26,54,93,0.08);
-}
-.daily-amap-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--primary, #1a365d);
-  margin-bottom: 0.8rem;
-  letter-spacing: 0.5px;
-}
-.daily-amap-container {
-  width: 100%;
-  height: 350px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #e8ecf1;
-  position: relative;
-}
-.daily-amap-container::after {
-  content: '地图加载中...';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #8899aa;
-  font-size: 0.85rem;
-}
-.daily-amap-container.amap-loaded::after {
-  display: none;
-}
-.daily-amap-legend {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.6rem;
-  flex-wrap: wrap;
-}
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.75rem;
-  color: #667788;
-}
-.legend-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.daily-amap-nav {
-  margin-top: 0.8rem;
-  padding-top: 0.8rem;
-  border-top: 1px dashed rgba(26,54,93,0.12);
-}
-.nav-title {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--primary, #1a365d);
-  margin-bottom: 0.5rem;
-}
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-.map-nav-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.4rem 0.7rem;
-  background: white;
-  border: 1px solid rgba(26,54,93,0.1);
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 0.75rem;
-  color: var(--primary, #1a365d);
-  
-  cursor: pointer;
-}
-.map-nav-link:hover {
-  background: var(--primary, #1a365d);
-  color: white;
-  border-color: var(--primary, #1a365d);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(26,54,93,0.2);
-}
-.mnl-from, .mnl-to {
-  font-weight: 600;
-}
-.mnl-arrow {
-  color: var(--lake, #2d6a9f);
-  font-weight: bold;
-}
-.map-nav-link:hover .mnl-arrow {
-  color: white;
-}
-.mnl-dist {
-  color: #8899aa;
-  font-size: 0.7rem;
-  margin-left: 0.2rem;
-}
-.map-nav-link:hover .mnl-dist {
-  color: rgba(255,255,255,0.8);
-}
-.daily-amap-summary {
-  margin-top: 0.6rem;
-  padding: 0.5rem 0.8rem;
-  background: rgba(26,54,93,0.04);
-  border-radius: 8px;
-  font-size: 0.75rem;
-  color: #667788;
-  text-align: center;
-}
-
-/* Chaoshan color overrides */
-.chaoshan-theme .daily-amap {
-  background: linear-gradient(135deg, rgba(13,115,119,0.02), rgba(42,157,143,0.04));
-  border-color: rgba(13,115,119,0.08);
-}
-.chaoshan-theme .daily-amap-title,
-.chaoshan-theme .nav-title {
-  color: var(--primary, #0d7377);
-}
-.chaoshan-theme .map-nav-link {
-  color: var(--primary, #0d7377);
-  border-color: rgba(13,115,119,0.1);
-}
-.chaoshan-theme .map-nav-link:hover {
-  background: var(--primary, #0d7377);
-  border-color: var(--primary, #0d7377);
-}
-.chaoshan-theme .mnl-arrow {
-  color: var(--ocean, #2a9d8f);
-}
-
-
 /* PRINT OVERRIDE - force everything visible */
 * { opacity: 1 !important; visibility: visible !important; }
 .day-section, .timeline-item, .gallery-item, .info-card, .hotel-card, .food-card, .tip-card {
@@ -1490,8 +1344,6 @@ body { overflow-x: visible !important; }
 </style>
 </head>
 <body>
-
-
 
 <!-- ===== HERO ===== -->
 <section class="hero">
@@ -1668,21 +1520,10 @@ body { overflow-x: visible !important; }
   </div>
 </section>
 
-
 <!-- ===== ROUTE OVERVIEW MAP ===== -->
 <section class="route-map" id="route" style="padding: 2rem 1rem;">
   <h3>🗺 路线总览 · 全程1,312km</h3>
-  <div id="qh-overview" class="daily-amap-container" style="height:520px;max-width:1200px;margin:0 auto;"></div>
-  <div class="daily-amap-legend" style="max-width:1200px;margin:0.5rem auto 0;">
-    <span class="legend-item"><span class="legend-dot" style="background:#667eea"></span>D1 7.24 西宁</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#2e86c1"></span>D2 7.25 青海湖→德令哈</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#1abc9c"></span>D3 7.26 德令哈→敦煌</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#e056a0"></span>D4 7.27 敦煌返程</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
-    <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
-  </div>
+
 </section>
 <!-- ===== DAY 1 ===== -->
 <section class="day-section day1" id="day1">
@@ -1716,24 +1557,6 @@ body { overflow-x: visible !important; }
   </div>
 
   <!-- Daily Route Map -->
-  <div class="daily-amap">
-    <div class="daily-amap-title">🗺 DAY 1 · 西宁 · 塔尔寺</div>
-    <div id="qh-day-1" class="daily-amap-container"></div>
-    <div class="daily-amap-legend">
-      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
-    </div>
-    <div class="daily-amap-nav">
-      <div class="nav-title">🧭 点击路线跳转高德导航</div>
-      <div class="nav-links">
-        <a href="https://uri.amap.com/direction?from=101.778,36.617,西宁机场&to=101.573,36.483,塔尔寺&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">✈ 西宁机场</span><span class="mnl-arrow">→</span><span class="mnl-to">🛕 塔尔寺</span><span class="mnl-dist">车程40min</span></a>
-        <a href="https://uri.amap.com/direction?from=101.573,36.483,塔尔寺&to=101.775,36.623,星程酒店&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🛕 塔尔寺</span><span class="mnl-arrow">→</span><span class="mnl-to">🏨 星程酒店</span><span class="mnl-dist">30km · 40min</span></a>
-      </div>
-    </div>
-    <div class="daily-amap-summary">全天约100km · 塔尔寺门票70元 · 西宁海拔2200m</div>
-  </div>
 
   <div class="timeline">
     <!-- Route choice tabs -->
@@ -1900,26 +1723,6 @@ body { overflow-x: visible !important; }
   </div>
 
   <!-- Daily Route Map -->
-  <div class="daily-amap">
-    <div class="daily-amap-title">🗺 DAY 2 · 西宁→二郎剑→茶卡→德令哈</div>
-    <div id="qh-day-2" class="daily-amap-container"></div>
-    <div class="daily-amap-legend">
-      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
-    </div>
-    <div class="daily-amap-nav">
-      <div class="nav-title">🧭 点击路线跳转高德导航</div>
-      <div class="nav-links">
-        <a href="https://uri.amap.com/direction?from=101.775,36.623,星程酒店&to=100.60,36.85,二郎剑&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🏨 西宁</span><span class="mnl-arrow">→</span><span class="mnl-to">🌊 二郎剑</span><span class="mnl-dist">230km · 3h</span></a>
-        <a href="https://uri.amap.com/direction?from=100.60,36.85,二郎剑&to=99.09,36.73,茶卡镇&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🌊 二郎剑</span><span class="mnl-arrow">→</span><span class="mnl-to">🍽 茶卡镇</span><span class="mnl-dist">160km · 2.5h</span></a>
-        <a href="https://uri.amap.com/direction?from=99.09,36.73,茶卡镇&to=99.08,36.72,茶卡盐湖&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍽 茶卡镇</span><span class="mnl-arrow">→</span><span class="mnl-to">🧂 茶卡盐湖</span><span class="mnl-dist">3km</span></a>
-        <a href="https://uri.amap.com/direction?from=99.08,36.72,茶卡盐湖&to=97.365,37.370,汉庭优佳&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🧂 茶卡盐湖</span><span class="mnl-arrow">→</span><span class="mnl-to">🏙 德令哈</span><span class="mnl-dist">200km · 2.5h</span></a>
-      </div>
-    </div>
-    <div class="daily-amap-summary">全天约590km · 二郎剑青海湖·茶卡门票60元+小火车50元 · 戈壁公路·德令哈海拔2980m</div>
-  </div>
 
   <div class="timeline">
     <div class="timeline-item meal">
@@ -2065,30 +1868,7 @@ body { overflow-x: visible !important; }
     </div>
   </div>
 
-
   <!-- Daily Route Map -->
-  <div class="daily-amap">
-    <div class="daily-amap-title">🗺 DAY 3 · 德令哈→翡翠湖→敦煌→沙洲夜市→月牙泉</div>
-    <div id="qh-day-3" class="daily-amap-container"></div>
-    <div class="daily-amap-legend">
-      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
-    </div>
-    <div class="daily-amap-nav">
-      <div class="nav-title">🧭 点击路线跳转高德导航</div>
-      <div class="nav-links">
-        <a href="https://uri.amap.com/direction?from=97.365,37.370,汉庭优佳&to=95.85,37.85,翡翠湖&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🏙 德令哈</span><span class="mnl-arrow">→</span><span class="mnl-to">💎 翡翠湖</span><span class="mnl-dist">250km · 3h</span></a>
-        <a href="https://uri.amap.com/direction?from=95.85,37.85,翡翠湖&to=95.86,37.86,大柴旦&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">💎 翡翠湖</span><span class="mnl-arrow">→</span><span class="mnl-to">🍜 大柴旦</span><span class="mnl-dist">约10km · 15min</span></a>
-        <a href="https://uri.amap.com/direction?from=95.86,37.86,大柴旦&to=94.69,40.05,敦煌&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍜 大柴旦</span><span class="mnl-arrow">→</span><span class="mnl-to">🏜 敦煌</span><span class="mnl-dist">约330km · 3.5h</span></a>
-        <a href="https://uri.amap.com/direction?from=95.86,37.86,大柴旦&to=94.67,40.10,沙洲夜市&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍜 大柴旦</span><span class="mnl-arrow">→</span><span class="mnl-to">🍽 沙洲夜市</span><span class="mnl-dist">约330km · 3.5h</span></a>
-        <a href="https://uri.amap.com/direction?from=94.67,40.10,沙洲夜市&to=94.69,40.05,沙洲野奢营&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍽 沙洲夜市</span><span class="mnl-arrow">→</span><span class="mnl-to">🏜️ 沙洲野奢营</span><span class="mnl-dist">约5km · 10min</span></a>
-        <a href="https://uri.amap.com/direction?from=94.69,40.05,沙洲野奢营&to=94.67,40.05,月牙泉&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🏜️ 沙洲野奢营</span><span class="mnl-arrow">→</span><span class="mnl-to">🌙 月牙泉</span><span class="mnl-dist">约2km · 5min</span></a>
-      </div>
-    </div>
-    <div class="daily-amap-summary">全天约550km · 翡翠湖60元 · 月牙泉110元 · 沙洲夜市 · 住沙洲野奢营</div>
-  </div>
 
   <div class="timeline">
     <div class="timeline-item meal">
@@ -2250,27 +2030,7 @@ body { overflow-x: visible !important; }
     </div>
   </div>
 
-
   <!-- Daily Route Map -->
-  <div class="daily-amap">
-    <div class="daily-amap-title">🗺 DAY 4 · 鸣沙山 + 敦煌市区 + 莫高窟 + 返程</div>
-    <div id="qh-day-4" class="daily-amap-container"></div>
-    <div class="daily-amap-legend">
-      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
-      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
-    </div>
-    <div class="daily-amap-nav">
-      <div class="nav-title">🧭 点击路线跳转高德导航</div>
-      <div class="nav-links">
-                <a href="https://uri.amap.com/direction?from=94.67,40.05,鸣沙山&to=94.78,40.14,敦煌市区&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🐫 鸣沙山</span><span class="mnl-arrow">→</span><span class="mnl-to">🍜 敦煌市区</span><span class="mnl-dist">5km · 10min</span></a>
-        <a href="https://uri.amap.com/direction?from=94.78,40.14,敦煌市区&to=94.81,40.04,莫高窟&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍜 敦煌市区</span><span class="mnl-arrow">→</span><span class="mnl-to">🎨 莫高窟</span><span class="mnl-dist">10km · 15min</span></a>
-        <a href="https://uri.amap.com/direction?from=94.81,40.04,莫高窟&to=94.66,40.14,敦煌机场&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🎨 莫高窟</span><span class="mnl-arrow">→</span><span class="mnl-to">✈ 敦煌机场</span><span class="mnl-dist">20km · 30min</span></a>
-      </div>
-    </div>
-    <div class="daily-amap-summary">全天约60km · 滑沙50元 · 沙漠摩托100元</div>
-  </div>
 
   <div class="timeline">
     <div class="timeline-item">
@@ -2512,16 +2272,6 @@ body { overflow-x: visible !important; }
 <div class="lightbox" id="lightbox">
   <img src="" alt="Preview" id="lightboxImg">
 </div>
-
-<!-- AMap Diagnostic Panel -->
-<div id="amap-diag-panel" style="position:fixed;bottom:0;left:0;right:0;max-height:150px;overflow-y:auto;background:rgba(20,20,30,0.95);color:#aaa;padding:8px 12px;font-family:monospace;font-size:11px;z-index:99999;border-top:2px solid #3498db;backdrop-filter:blur(5px);">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-    <span style="color:#3498db;font-weight:bold;font-size:12px;">AMap Debug Log</span>
-    <button onclick="this.parentElement.parentElement.style.display='none'" style="background:none;border:1px solid #555;color:#888;padding:2px 8px;cursor:pointer;border-radius:3px;font-size:10px;">Close</button>
-  </div>
-</div>
-
-
 
 </body>
 </html>
