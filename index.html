@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7.24-7.27 青海线旅行攻略（上海/杭州/广州出发）</title>
+<style>
+  
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --primary: #1a365d;
+    --primary-light: #2c5282;
+    --accent: #dd6b20;
+    --accent-light: #ed8936;
+    --gold: #d69e2e;
+    --gold-light: #ecc94b;
+    --sand: #fef5e7;
+    --lake: #3182ce;
+    --lake-light: #63b3ed;
+    --salt: #90cdf4;
+    --desert: #c8a574;
+    --night: #1a202c;
+    --text: #2d3748;
+    --text-light: #4a5568;
+    --light: #f7fafc;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 8px 24px rgba(0,0,0,0.12);
+    --shadow-lg: 0 16px 48px rgba(0,0,0,0.16);
+    --shadow-xl: 0 24px 64px rgba(0,0,0,0.2);
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+  }
+
+  html {  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
+    
+    line-height: 1.6;
+  }
+
+  /* ===== PROGRESS BAR ===== */
+  .progress-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #f093fb 50%, #f5576c 100%);
+    z-index: 200;
+    
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 25%, #3182ce 50%, #63b3ed 75%, #90cdf4 100%);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 15% 85%, rgba(221, 107, 32, 0.4) 0%, transparent 40%),
+      radial-gradient(circle at 85% 15%, rgba(49, 130, 206, 0.5) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(255,255,255,0.15) 0%, transparent 60%);
+    
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+
+  
+    33% { transform: scale(1.05) rotate(1deg); }
+    66% { transform: scale(0.98) rotate(-1deg); }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    max-width: 900px;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    padding: 0.6rem 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', 'Noto Sans SC', serif;
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 40px rgba(0,0,0,0.3);
+    
+    letter-spacing: -2px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-weight: 300;
+    opacity: 0.95;
+    margin-bottom: 3rem;
+    
+    letter-spacing: 1px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .stat-item {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: var(--radius-md);
+    padding: 1.2rem 1.8rem;
+    min-width: 130px;
+    
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  }
+
+  .stat-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    opacity: 0.7;
+    
+    font-size: 1.8rem;
+    z-index: 3;
+  }
+
+  
+    40% { transform: translateX(-50%) translateY(-15px); }
+    60% { transform: translateX(-50%) translateY(-8px); }
+  }
+
+  /* ===== NAVIGATION ===== */
+  .nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    padding: 1rem 0;
+    overflow-x: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .nav-inner {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    min-width: max-content;
+    padding: 0 1.5rem;
+  }
+
+  .nav-item {
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    
+    white-space: nowrap;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    
+  }
+
+  .nav-item:hover::before { left: 100%; }
+
+  .nav-item:hover, .nav-item.active {
+    background: linear-gradient(135deg, var(--lake), var(--lake-light));
+    color: white;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(49, 130, 206, 0.35);
+  }
+
+  /* ===== PACKING LIST ===== */
+  .packing-section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .packing-section h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .packing-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    border-radius: 2px;
+  }
+
+  .packing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .packing-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    
+    position: relative;
+    overflow: hidden;
+  }
+
+  .packing-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+  }
+
+  .packing-card.must-bring::before {
+    background: linear-gradient(90deg, #e53e3e, #fc8181);
+  }
+
+  .packing-card.recommended::before {
+    background: linear-gradient(90deg, #3182ce, #63b3ed);
+  }
+
+  .packing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .packing-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #e2e8f0;
+  }
+
+  .packing-icon { font-size: 1.5rem; }
+  .packing-title { font-size: 1.3rem; font-weight: 800; color: var(--primary); }
+  .packing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .packing-list li {
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #edf2f7;
+    
+  }
+
+  .packing-list li:hover {
+    background: #f7fafc;
+    padding-left: 0.5rem;
+  }
+
+  .packing-list li:last-child { border-bottom: none; }
+  .packing-list li strong { color: var(--primary); font-weight: 700; }
+  .packing-tip {
+    background: linear-gradient(135deg, #fffaf0, #feebc8);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 1.8rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .packing-tip strong { color: var(--accent); font-weight: 700; }
+
+  /* ===== DAY SECTIONS ===== */
+  .day-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    
+  }
+
+  .day-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .day-number {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+    position: relative;
+    
+  }
+
+  .day-number::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+    
+  }
+
+  
+    50% { transform: scale(1.1); opacity: 0.5; }
+  }
+
+  .day-number:hover { transform: scale(1.1) rotate(5deg); }
+
+  .day-number .day-text { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
+  .day-number .day-date { font-size: 1.8rem; line-height: 1; font-weight: 900; }
+
+  .day1 .day-number { background: linear-gradient(135deg, #667eea, #764ba2); }
+  .day2 .day-number { background: linear-gradient(135deg, #3182ce, #63b3ed); }
+  .day3 .day-number { background: linear-gradient(135deg, #ed64a6, #f687b3); }
+  .day4 .day-number { background: linear-gradient(135deg, #ed8936, #fbd38d); }
+
+  .day-info h2 {
+    font-family: 'Playfair Display', 'Noto Sans SC', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+  }
+
+  .day-info .route-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--sand), #fef5e7);
+    color: var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(221, 107, 32, 0.1);
+  }
+
+  .day-info .drive-info {
+    display: inline-block;
+    background: linear-gradient(135deg, #e6fffa, #b2f5ea);
+    color: #0d9488;
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(13, 148, 136, 0.1);
+  }
+
+  /* ===== IMAGE GALLERY ===== */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  .gallery-item {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.15);
+  }
+
+  .gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem 1.5rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    transform: translateY(100%);
+    
+  }
+
+  .gallery-item:hover .overlay {
+    transform: translateY(0);
+  }
+
+  .overlay-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .overlay-desc {
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+
+  /* ===== TIMELINE ===== */
+  .timeline {
+    position: relative;
+    padding-left: 2.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--lake), var(--accent), var(--gold));
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(49, 130, 206, 0.3);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .timeline-item:hover {
+    transform: translateX(12px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.85rem;
+    top: 2.2rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--lake);
+    border: 4px solid var(--white);
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.4);
+    
+  }
+
+  .timeline-item:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 6px 20px rgba(49, 130, 206, 0.6);
+  }
+
+  .time-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--lake), var(--lake-light));
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+    letter-spacing: 0.5px;
+  }
+
+  .timeline-item.evening .time-badge {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  }
+
+  .timeline-item.night .time-badge {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3);
+  }
+
+  .timeline-content h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--primary);
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+  }
+
+
+  /* Timeline thumbnail */
+  .timeline-thumb {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 100px;
+    height: 75px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 0.92;
+    
+    z-index: 1;
+  }
+  .timeline-item:hover .timeline-thumb {
+    opacity: 1;
+    transform: scale(1.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  }
+  .timeline-item .timeline-content {
+    padding-right: 115px;
+  }
+  @media (max-width: 768px) {
+    .timeline-thumb { width: 70px; height: 52px; top: 0.8rem; right: 0.8rem; }
+    .timeline-item .timeline-content { padding-right: 85px; }
+  }
+
+  .timeline-meta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+  }
+
+  /* ===== INFO CARDS ===== */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .info-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-md);
+    border-left: 5px solid var(--lake);
+    
+  }
+
+  .info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .info-card.food { border-left-color: var(--accent); }
+  .info-card.hotel { border-left-color: #9b59b6; }
+  .info-card.tips { border-left-color: #1abc9c; }
+
+  .info-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--primary);
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--text-light);
+  }
+
+  /* ===== PARALLAX DIVIDER ===== */
+  .parallax-divider {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+  }
+
+  .parallax-divider img {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    top: -25%;
+  }
+
+  .parallax-divider .overlay-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.5);
+    padding: 2rem;
+  }
+
+  .parallax-divider .overlay-text h3 {
+    font-family: 'Playfair Display', 'Noto Sans SC', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+    letter-spacing: -1px;
+  }
+
+  .parallax-divider .overlay-text p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    font-weight: 300;
+  }
+
+  .parallax-divider::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+    z-index: 1;
+  }
+
+  /* ===== FLIGHT INFO ===== */
+  .flight-group { margin-top: 0.8rem; }
+  .flight-group-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.8rem;
+  }
+  .flight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.8rem;
+  }
+  .flight-option {
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border-radius: var(--radius-md);
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 1px solid #e2e8f0;
+  }
+  .flight-option:hover {
+    background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+    border-color: var(--lake);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+  .flight-option .fo-city { font-weight: 700; color: var(--primary); }
+  .flight-option .fo-detail { font-size: 0.8rem; color: var(--text-light); text-align: right; }
+  .flight-option .fo-time { font-weight: 700; color: var(--lake); }
+  .flight-option .fo-price { font-weight: 800; color: #e53e3e; font-size: 0.8rem; margin-left: 0.4rem; }
+
+  .timeline-item.flight {
+    background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+    border-left: 5px solid var(--lake);
+  }
+  .timeline-item.flight::before { background: var(--lake); }
+  .timeline-item.meal {
+    background: linear-gradient(135deg, #fffaf0, #feebc8);
+    border-left: 5px solid var(--accent);
+  }
+  .timeline-item.meal::before { background: var(--accent); }
+  .timeline-item.hotel {
+    background: linear-gradient(135deg, #faf5ff, #e9d8fd);
+    border-left: 5px solid #9b59b6;
+  }
+  .timeline-item.hotel::before { background: #9b59b6; }
+  .timeline-item.rental {
+    background: linear-gradient(135deg, #fff5f5, #fed7d7);
+    border-left: 5px solid #e53e3e;
+  }
+  .timeline-item.rental::before { background: #e53e3e; }
+
+  /* ===== ROUTE CHOICE TABS ===== */
+  .route-choice {
+    margin: 0.5rem 0;
+  }
+
+  .route-flight-tip {
+    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+    border: 1px solid #f59e0b;
+    border-radius: var(--radius-md);
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #92400e;
+  }
+
+  .route-choice-header {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0;
+  }
+
+  .route-tab {
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+    color: var(--text-light);
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    user-select: none;
+  }
+
+  .route-tab:hover {
+    color: var(--primary);
+    background: rgba(26, 54, 93, 0.05);
+  }
+
+  .route-tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: rgba(26, 54, 93, 0.08);
+  }
+
+  .route-content {
+    display: none;
+    
+  }
+
+  .route-content.active {
+    display: block;
+  }
+
+  /* ===== DAILY ROUTE MAP ===== */
+  .daily-route {
+    background: linear-gradient(135deg, rgba(26,54,93,0.03), rgba(45,106,159,0.06));
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(26,54,93,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .daily-route::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--lake), var(--gold));
+  }
+
+  .daily-route-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .daily-route-stops {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .daily-route-stop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: var(--radius-md);
+    
+    min-width: 80px;
+  }
+
+  .daily-route-stop:hover {
+    background: rgba(255,255,255,0.8);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .daily-stop-icon {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    
+  }
+
+  .daily-route-stop:hover .daily-stop-icon { transform: scale(1.1); }
+
+  .daily-stop-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .daily-stop-time {
+    font-size: 0.7rem;
+    color: var(--text-light);
+    text-align: center;
+  }
+
+  .daily-route-arrow {
+    font-size: 1.2rem;
+    color: var(--lake);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .daily-route-arrow-info {
+    font-size: 0.65rem;
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .daily-route-summary {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed rgba(26,54,93,0.15);
+    flex-wrap: wrap;
+  }
+
+  .daily-route-summary span {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  /* ===== TRANSPORT CARD ===== */
+  .transport-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0,0,0,0.04);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .transport-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 5px;
+    background: linear-gradient(90deg, #e53e3e, #ed8936, #ecc94b);
+  }
+
+  .transport-card h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+
+  .transport-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .transport-options-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .transport-option {
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    
+    border: 1px solid #e2e8f0;
+  }
+
+  .transport-option:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--lake);
+  }
+
+  .transport-option h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+  }
+
+  .transport-option ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .transport-option li {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    padding: 0.3rem 0;
+    border-bottom: 1px dashed #e2e8f0;
+  }
+
+  .transport-option li:last-child { border-bottom: none; }
+
+  .transport-option .price {
+    font-weight: 800;
+    color: #e53e3e;
+  }
+
+  .transport-tip {
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    background: linear-gradient(135deg, #fffaf0, #feebc8);
+    padding: 1rem 1.2rem;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--gold);
+    line-height: 1.7;
+  }
+
+  /* ===== ROUTE MAP ===== */
+  .route-map {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 3rem 2rem;
+    margin: 3rem auto;
+    max-width: 1100px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .route-map h3 {
+    text-align: center;
+    font-family: 'Playfair Display', 'Noto Sans SC', serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: var(--primary);
+  }
+
+  .route-stops {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+  }
+
+  .route-stop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.2rem;
+    border-radius: var(--radius-lg);
+    
+    cursor: default;
+  }
+
+  .route-stop:hover {
+    background: linear-gradient(135deg, var(--sand), #fef5e7);
+    transform: scale(1.08);
+    box-shadow: var(--shadow-md);
+  }
+
+  .stop-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    
+  }
+
+  .route-stop:hover .stop-icon { transform: rotate(10deg) scale(1.1); }
+
+  .stop-name { font-weight: 700; font-size: 1rem; color: var(--primary); }
+  .stop-date { font-size: 0.8rem; color: var(--text-light); }
+
+  .route-arrow {
+    font-size: 1.8rem;
+    color: var(--lake);
+    
+    font-weight: 700;
+  }
+
+  
+    50% { opacity: 0.5; transform: translateX(5px); }
+  }
+
+  .route-distance {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* ===== COST SUMMARY ===== */
+  .cost-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    border-radius: var(--radius-xl);
+    padding: 3.5rem 2.5rem;
+    margin: 4rem auto;
+    max-width: 1100px;
+    color: white;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cost-summary::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    
+  }
+
+  
+    50% { transform: rotate(180deg); }
+  }
+
+  .cost-summary h3 {
+    font-family: 'Playfair Display', 'Noto Sans SC', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cost-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cost-item {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    
+  }
+
+  .cost-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  }
+
+  .cost-item .cost-icon { font-size: 2.5rem; margin-bottom: 0.8rem; }
+  .cost-item .cost-label { font-size: 0.9rem; opacity: 0.9; margin-bottom: 0.5rem; font-weight: 500; }
+  .cost-item .cost-value { font-size: 1.8rem; font-weight: 900; margin-bottom: 0.5rem; }
+  .cost-item .cost-note { font-size: 0.78rem; opacity: 0.8; margin-top: 0.5rem; line-height: 1.5; }
+
+  .cost-total {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(255,255,255,0.3);
+    position: relative;
+    z-index: 2;
+  }
+
+  .cost-total .total-label { font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.5rem; font-weight: 500; }
+  .cost-total .total-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--gold-light);
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  .cost-total .total-note { font-size: 0.85rem; opacity: 0.8; margin-top: 0.8rem; }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: linear-gradient(135deg, var(--night), #2d3748);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--lake), var(--accent), var(--gold));
+  }
+
+  .footer h3 {
+    font-family: 'Playfair Display', 'Noto Sans SC', serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    color: var(--gold-light);
+  }
+
+  .footer p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    line-height: 1.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ===== ANIMATIONS ===== */
+  
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .gallery-item {
+    opacity: 0;
+    transform: scale(0.9);
+    
+  }
+
+  .gallery-item.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* ===== LIGHTBOX ===== */
+  .lightbox {
+    display: none;
+    position: relative;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.95);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    backdrop-filter: blur(10px);
+  }
+
+  .lightbox.active { display: flex; }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 60px rgba(0,0,0,0.6);
+  }
+
+  
+    to { opacity: 1; }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .hero-stats { gap: 1rem; }
+    .stat-item { min-width: 110px; padding: 1rem 1.2rem; }
+    .stat-number { font-size: 1.8rem; }
+    .day-header { gap: 1.2rem; }
+    .day-number { width: 70px; height: 70px; }
+    .day-number .day-date { font-size: 1.4rem; }
+    .day-info h2 { font-size: 1.6rem; }
+    .gallery { grid-template-columns: 1fr; }
+    .timeline { padding-left: 2rem; }
+    .parallax-divider { height: 250px; }
+    .parallax-divider .overlay-text h3 { font-size: 2rem; }
+    .packing-grid { grid-template-columns: 1fr; }
+    .transport-options-3col { grid-template-columns: 1fr; }
+  }
+
+/* ===== AMAP DAILY MAP ===== */
+.daily-amap {
+  margin: 1rem 0;
+  background: linear-gradient(135deg, rgba(26,54,93,0.02), rgba(45,106,159,0.04));
+  border-radius: 16px;
+  padding: 1.2rem;
+  border: 1px solid rgba(26,54,93,0.08);
+}
+.daily-amap-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary, #1a365d);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+.daily-amap-container {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e8ecf1;
+  position: relative;
+}
+.daily-amap-container::after {
+  content: '地图加载中...';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #8899aa;
+  font-size: 0.85rem;
+}
+.daily-amap-container.amap-loaded::after {
+  display: none;
+}
+.daily-amap-legend {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  color: #667788;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.daily-amap-nav {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed rgba(26,54,93,0.12);
+}
+.nav-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary, #1a365d);
+  margin-bottom: 0.5rem;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.map-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.7rem;
+  background: white;
+  border: 1px solid rgba(26,54,93,0.1);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: var(--primary, #1a365d);
+  
+  cursor: pointer;
+}
+.map-nav-link:hover {
+  background: var(--primary, #1a365d);
+  color: white;
+  border-color: var(--primary, #1a365d);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(26,54,93,0.2);
+}
+.mnl-from, .mnl-to {
+  font-weight: 600;
+}
+.mnl-arrow {
+  color: var(--lake, #2d6a9f);
+  font-weight: bold;
+}
+.map-nav-link:hover .mnl-arrow {
+  color: white;
+}
+.mnl-dist {
+  color: #8899aa;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+}
+.map-nav-link:hover .mnl-dist {
+  color: rgba(255,255,255,0.8);
+}
+.daily-amap-summary {
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  background: rgba(26,54,93,0.04);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: #667788;
+  text-align: center;
+}
+
+/* Chaoshan color overrides */
+.chaoshan-theme .daily-amap {
+  background: linear-gradient(135deg, rgba(13,115,119,0.02), rgba(42,157,143,0.04));
+  border-color: rgba(13,115,119,0.08);
+}
+.chaoshan-theme .daily-amap-title,
+.chaoshan-theme .nav-title {
+  color: var(--primary, #0d7377);
+}
+.chaoshan-theme .map-nav-link {
+  color: var(--primary, #0d7377);
+  border-color: rgba(13,115,119,0.1);
+}
+.chaoshan-theme .map-nav-link:hover {
+  background: var(--primary, #0d7377);
+  border-color: var(--primary, #0d7377);
+}
+.chaoshan-theme .mnl-arrow {
+  color: var(--ocean, #2a9d8f);
+}
+
+
+/* PRINT OVERRIDE - force everything visible */
+* { opacity: 1 !important; visibility: visible !important; }
+.day-section, .timeline-item, .gallery-item, .info-card, .hotel-card, .food-card, .tip-card {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+.hero { height: 500px !important; min-height: 400px !important; }
+.progress-bar { display: none !important; }
+.floating-nav { display: none !important; }
+body { overflow-x: visible !important; }
+
+</style>
+</head>
+<body>
+
+
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">TEAM OUTING FY27</div>
+    <h1 class="hero-title">青海线之旅</h1>
+    <p class="hero-subtitle">上海/杭州/广州出发 · 西宁→青海湖→茶卡→德令哈→翡翠湖→敦煌 · 四天三晚</p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">4</div>
+        <div class="stat-label">天</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">晚</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1312</div>
+        <div class="stat-label">公里</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">7</div>
+        <div class="stat-label">个景点</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">↓</div>
+</section>
+
+<!-- ===== NAV ===== -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="#overview" class="nav-item">行程总览</a>
+    <a href="#tips" class="nav-item">行前准备</a>
+    <a href="#route" class="nav-item">路线总览</a>
+    <a href="#day1" class="nav-item day1">Day1 西宁</a>
+    <a href="#day2" class="nav-item day2">Day2 青海湖→德令哈</a>
+    <a href="#day3" class="nav-item day3">Day3 德令哈→敦煌</a>
+    <a href="#day4" class="nav-item day4">Day4 敦煌</a>
+    <a href="#per-person-cost" class="nav-item">费用清单</a>
+  </div>
+</nav>
+
+<!-- ===== TRIP OVERVIEW ===== -->
+<section class="trip-overview" id="overview" style="padding: 2.5rem 1rem; max-width: 1100px; margin: 0 auto;">
+  <h3 style="text-align:center; font-size:1.8rem; color:var(--primary); margin-bottom:0.3rem;">📋 行程总览</h3>
+  <p style="text-align:center; color:var(--text-light); margin-bottom:1.8rem; font-size:1rem;">7.24 - 7.27 · 四天三晚 · 西宁→敦煌 · 全程约1,312km</p>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1.2rem;">
+    <!-- Day 1 -->
+    <div style="background:linear-gradient(135deg, #667eea22, #667eea08); border-radius:var(--radius-md); padding:1.4rem; border-left:4px solid #667eea; box-shadow:var(--shadow-sm);">
+      <div style="font-size:0.85rem; color:#667eea; font-weight:700; margin-bottom:0.3rem;">DAY 1 · 7月24日</div>
+      <div style="font-size:1.15rem; font-weight:700; color:var(--primary); margin-bottom:0.5rem;">西宁 · 塔尔寺</div>
+      <div style="font-size:0.9rem; color:var(--text-light); line-height:1.7;">
+        ✈ 各地抵达西宁（建议12:00前）<br>
+        🏛 下午游览塔尔寺（如中午前到达）<br>
+        🍜 莫家街/水井巷美食<br>
+        🏨 住：星程酒店（以勒大厦店）
+      </div>
+      <div style="margin-top:0.6rem; font-size:0.8rem; color:#667eea; background:#667eea11; padding:0.3rem 0.6rem; border-radius:6px; display:inline-block;">🚕 Day1交通自行安排</div>
+    </div>
+
+    <!-- Day 2 -->
+    <div style="background:linear-gradient(135deg, #2e86c122, #2e86c108); border-radius:var(--radius-md); padding:1.4rem; border-left:4px solid #2e86c1; box-shadow:var(--shadow-sm);">
+      <div style="font-size:0.85rem; color:#2e86c1; font-weight:700; margin-bottom:0.3rem;">DAY 2 · 7月25日</div>
+      <div style="font-size:1.15rem; font-weight:700; color:var(--primary); margin-bottom:0.5rem;">青海湖 · 茶卡盐湖 · 德令哈</div>
+      <div style="font-size:0.9rem; color:var(--text-light); line-height:1.7;">
+        🌊 二郎剑景区 · 青海湖畔<br>
+        🧂 茶卡盐湖 · 天空之镜<br>
+        🚗 全程约400km / 5h<br>
+        🏨 住：汉庭优佳德令哈景华湾广场酒店
+      </div>
+      <div style="margin-top:0.6rem; font-size:0.8rem; color:#2e86c1; background:#2e86c111; padding:0.3rem 0.6rem; border-radius:6px; display:inline-block;">🚗 9座商务车包车</div>
+    </div>
+
+    <!-- Day 3 -->
+    <div style="background:linear-gradient(135deg, #1abc9c22, #1abc9c08); border-radius:var(--radius-md); padding:1.4rem; border-left:4px solid #1abc9c; box-shadow:var(--shadow-sm);">
+      <div style="font-size:0.85rem; color:#1abc9c; font-weight:700; margin-bottom:0.3rem;">DAY 3 · 7月26日</div>
+      <div style="font-size:1.15rem; font-weight:700; color:var(--primary); margin-bottom:0.5rem;">德令哈 · 翡翠湖 · 敦煌 · 沙洲夜市 · 月牙泉日落</div>
+      <div style="font-size:0.9rem; color:var(--text-light); line-height:1.7;">
+        💎 大柴旦翡翠湖 · 翡翠秘境<br>
+        🌙 月牙泉 · 沙漠日落<br>
+        🍽 沙洲夜市 · 敦煌美食<br>
+        🚗 全程约550km / 7h<br>
+        🏨 住：沙洲野奢营（鸣沙山景区）
+      </div>
+      <div style="margin-top:0.6rem; font-size:0.8rem; color:#1abc9c; background:#1abc9c11; padding:0.3rem 0.6rem; border-radius:6px; display:inline-block;">🚗 9座商务车包车</div>
+    </div>
+
+    <!-- Day 4 -->
+    <div style="background:linear-gradient(135deg, #e056a022, #e056a008); border-radius:var(--radius-md); padding:1.4rem; border-left:4px solid #e056a0; box-shadow:var(--shadow-sm);">
+      <div style="font-size:0.85rem; color:#e056a0; font-weight:700; margin-bottom:0.3rem;">DAY 4 · 7月27日</div>
+      <div style="font-size:1.15rem; font-weight:700; color:var(--primary); margin-bottom:0.5rem;">月牙泉 · 莫高窟 · 鸣沙山 · 返程</div>
+      <div style="font-size:0.9rem; color:var(--text-light); line-height:1.7;">
+        🐫 鸣沙山骑骆驼 · 晨光沙漠<br>
+        🌙 月牙泉 · 沙漠清泉<br>
+        🎨 莫高窟 · 千年佛教艺术<br>
+        ✈ 18:30后返程航班 / 或留敦煌住一晚次日返
+      </div>
+      <div style="margin-top:0.6rem; font-size:0.8rem; color:#e056a0; background:#e056a011; padding:0.3rem 0.6rem; border-radius:6px; display:inline-block;">🚗 9座商务车包车至下午</div>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem; background:var(--sand); border-radius:var(--radius-sm); padding:1rem 1.2rem; font-size:0.9rem; color:var(--text-light);">
+    💡 <strong>出行提示：</strong>Day 1 抵达西宁交通自行安排；Day 2-4 全程9座商务车包车。不想Day4返程的同学可在敦煌多住一晚，Day5自行返程，第四晚住宿需自理。
+  </div>
+</section>
+
+<!-- ===== CHARTER VEHICLE INFO ===== -->
+<section style="padding:1.5rem 1rem; max-width:1200px; margin:0 auto;">
+  <div class="transport-card">
+    <h4>🚗 交通安排</h4>
+    <div class="transport-options" style="grid-template-columns: 1fr 1fr;">
+      <div class="transport-option">
+        <h5>🚕 Day1 · 自行安排</h5>
+        <ul>
+          <li>大家航班到达时间不同，<strong>交通自行组队打车</strong></li>
+          <li>机场打车/网约车到市区约30-40分钟，费用约80-120元</li>
+          <li>如选方案A去塔尔寺，可打车直达塔尔寺（约40min）</li>
+        </ul>
+      </div>
+      <div class="transport-option">
+        <h5>🧑‍✈️ Day2-4 · 9座商务车包车</h5>
+        <ul>
+          <li>车型：9座商务车（含司机），7人乘坐9座商务车</li>
+          <li>包车时间：<strong>Day2（7.25）- Day4（7.27）共3天</strong></li>
+          <li>费用：<span class="price">¥8,300/全程</span>（含油费、过路费、司机住宿等所有服务费）</li>
+          <li>人均：约¥1,186/人</li>
+          <li>优势：司机经验丰富，青海线路况熟悉，7人同车热闹方便</li>
+        </ul>
+      </div>
+    </div>
+    <div class="transport-tip">
+      💡 <strong>说明：</strong>Day1 自行打车到酒店集合；Day2 早上包车司机到酒店接人出发，Day4 下午送回敦煌机场/市区。全程费用已包含司机住宿等所有服务费，无需额外支付。
+    </div>
+  </div>
+</section>
+
+<!-- ===== PACKING LIST ===== -->
+<section class="packing-section" id="tips">
+  <h3>🎒 行前准备 · 必带 & 推荐</h3>
+  <div class="packing-grid">
+    <div class="packing-card must-bring">
+      <div class="packing-header">
+        <span class="packing-icon">⚠️</span>
+        <span class="packing-title">必带物品</span>
+      </div>
+      <ul class="packing-list">
+        <li><strong>身份证</strong> — 住宿、景区、机场全程必备</li>
+        <li><strong>防晒霜 SPF50+</strong> — 高原紫外线极强，不涂必晒伤</li>
+        <li><strong>墨镜/太阳镜</strong> — 盐湖反光+沙漠强光，保护眼睛</li>
+        <li><strong>保湿面霜+润唇膏</strong> — 西北极干燥，皮肤容易干裂</li>
+        <li><strong>常用药品</strong> — 感冒药、肠胃药、晕车药（车程长）</li>
+        <li><strong>充电宝</strong> — 全天车程+拍照，手机耗电极快</li>
+      </ul>
+    </div>
+    <div class="packing-card recommended">
+      <div class="packing-header">
+        <span class="packing-icon">💡</span>
+        <span class="packing-title">推荐携带</span>
+      </div>
+      <ul class="packing-list">
+        <li><strong>围巾/披肩</strong> — 拍照神器+防风沙，亮色更出片</li>
+        <li><strong>防水鞋套/雨鞋</strong> — 茶卡盐湖踩水必备（景点可租借10元/双）</li>
+        <li><strong>补水面膜</strong> — 每晚敷一片，对抗干燥</li>
+        <li><strong>外套/薄羽绒</strong> — 早晚温差大，敦煌夜晚可能只有15°C</li>
+        <li><strong>葡萄糖口服液</strong> — 高反时快速补充能量，缓解头晕乏力</li>
+        <li><strong>高原反应药品</strong> — 红景天（提前一周服用）或高原安（抵达后服用）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="packing-tip">
+    💡 <strong>高原反应提醒：</strong>Day2 青海湖（3,200m）、茶卡盐湖（3,000m）、德令哈（2,980m）海拔均接近或超过3,000米，可能出现头痛、气短、乏力等高反症状。建议提前一周服用红景天，行程中避免剧烈运动、不要饮酒、多喝热水。如症状严重请及时吸氧或就医。敦煌7月白天可达40°C，务必带足防晒和补水。Day3车程最长（9h+），建议备好零食和下载好离线娱乐内容。
+  </div>
+</section>
+
+
+<!-- ===== ROUTE OVERVIEW MAP ===== -->
+<section class="route-map" id="route" style="padding: 2rem 1rem;">
+  <h3>🗺 路线总览 · 全程1,312km</h3>
+  <div id="qh-overview" class="daily-amap-container" style="height:520px;max-width:1200px;margin:0 auto;"></div>
+  <div class="daily-amap-legend" style="max-width:1200px;margin:0.5rem auto 0;">
+    <span class="legend-item"><span class="legend-dot" style="background:#667eea"></span>D1 7.24 西宁</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#2e86c1"></span>D2 7.25 青海湖→德令哈</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#1abc9c"></span>D3 7.26 德令哈→敦煌</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#e056a0"></span>D4 7.27 敦煌返程</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
+    <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
+  </div>
+</section>
+<!-- ===== DAY 1 ===== -->
+<section class="day-section day1" id="day1">
+  <div class="day-header">
+    <div class="day-number">
+      <span class="day-text">DAY</span>
+      <span class="day-date">01</span>
+    </div>
+    <div class="day-info">
+      <h2>7.24 西宁（行程自由灵活）</h2>
+      <span class="route-tag">✈ 各地抵达西宁 → 🏛 塔尔寺（中午前到）/ 🍜 市区美食（下午到）→ 🏨 星程酒店</span>
+      <span class="drive-info">🚕 Day1交通自行安排，Day2起包车</span>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://gips1.baidu.com/it/u=2681538862,3860523032&fm=3074&app=3074&f=JPEG?w=1080&h=1890&type=normal&func=" alt="塔尔寺" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23667eea%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>塔尔寺</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">塔尔寺</div>
+        <div class="overlay-desc">藏传佛教格鲁派六大寺院之一</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://b0.bdstatic.com/6d5936dac545d00ea3265e239e60a68a.jpg" alt="莫家街" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%232e86c1%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>莫家街</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">莫家街</div>
+        <div class="overlay-desc">西宁百年老街，酿皮手抓羊肉甜醅</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily Route Map -->
+  <div class="daily-amap">
+    <div class="daily-amap-title">🗺 DAY 1 · 西宁 · 塔尔寺</div>
+    <div id="qh-day-1" class="daily-amap-container"></div>
+    <div class="daily-amap-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
+    </div>
+    <div class="daily-amap-nav">
+      <div class="nav-title">🧭 点击路线跳转高德导航</div>
+      <div class="nav-links">
+        <a href="https://uri.amap.com/direction?from=101.778,36.617,西宁机场&to=101.573,36.483,塔尔寺&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">✈ 西宁机场</span><span class="mnl-arrow">→</span><span class="mnl-to">🛕 塔尔寺</span><span class="mnl-dist">车程40min</span></a>
+        <a href="https://uri.amap.com/direction?from=101.573,36.483,塔尔寺&to=101.775,36.623,星程酒店&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🛕 塔尔寺</span><span class="mnl-arrow">→</span><span class="mnl-to">🏨 星程酒店</span><span class="mnl-dist">30km · 40min</span></a>
+      </div>
+    </div>
+    <div class="daily-amap-summary">全天约100km · 塔尔寺门票70元 · 西宁海拔2200m</div>
+  </div>
+
+  <div class="timeline">
+    <!-- Route choice tabs -->
+    <div class="route-choice">
+      <div class="route-choice-header">
+        <span class="route-tab active" onclick="switchRoute('day1','a',this)">🅰️ 方案A：中午前到达</span>
+        <span class="route-tab" onclick="switchRoute('day1','b',this)">🅱️ 方案B：下午/晚上到达</span>
+      </div>
+
+      <div id="day1-a" class="route-content active">
+        <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:1rem;">无论几点到达，先到酒店办理入住放行李。如果时间充裕，下午可游览塔尔寺。</p>
+
+        <div class="timeline-item flight">
+          <span class="time-badge">12:00</span>
+          <div class="timeline-content">
+            <h4>✈ 落地西宁曹家堡机场</h4>
+            <p>各地航班飞抵西宁曹家堡机场，打车前往塔尔寺方向。Day1交通自行安排（打车/网约车），包车司机从Day2开始服务。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">✈ 建议12:00前落地</span>
+            <span class="meta-tag">🚕 机场→塔尔寺 打车约40min</span>
+          </div>
+        </div>
+
+        <div class="timeline-item meal">
+          <span class="time-badge">12:40</span>
+          <div class="timeline-content">
+            <h4>🍜 午餐 · 塔尔寺附近</h4>
+      <img class="timeline-thumb" src="http://b0.bdstatic.com/ugc/ZpDgy1C4ln4fPw1phWnOig29aa2d668e0175882b55036151d1286c.jpg" alt="🍜 午餐·塔尔寺附近" onerror="this.style.display='none'">
+            <p>机场出发前往塔尔寺方向，途中在湟中县午餐。推荐当地特色：<strong>酿皮</strong>（西北凉皮，配辣油醋汁开胃爽口）、<strong>甜醅</strong>（青稞发酵甜品，清甜解腻）、<strong>羊肉串</strong>（现烤红柳大串，肉香四溢）。简单吃点，为高原之旅补充能量。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">🚕 机场→湟中县 约40min</span>
+            <span class="meta-tag">💰 自理 人均30-50元</span>
+            <span class="meta-tag">⏰ 用餐约40min</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="time-badge">14:00</span>
+          <div class="timeline-content">
+            <h4>🏛 塔尔寺参观</h4>
+      <img class="timeline-thumb" src="https://gips1.baidu.com/it/u=2681538862,3860523032&fm=3074&app=3074&f=JPEG?w=1080&h=1890&type=normal&func=" alt="🏛 塔尔寺" onerror="this.style.display='none'">
+            <p>藏传佛教格鲁派六大寺院之一的塔尔寺。宗喀巴大师的诞生地，金碧辉煌的建筑群令人震撼，感受深厚的藏传佛教文化。主要参观：大金瓦殿、小金瓦殿、祈塔殿、大厨房等。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">🎫 门票70元</span>
+            <span class="meta-tag">⏰ 游览约2h（14:00-16:00）</span>
+            <span class="meta-tag">📍 湟中区鲁沙尔镇</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="time-badge">16:00</span>
+          <div class="timeline-content">
+            <h4>🚕 塔尔寺 → 星程酒店</h4>
+      <img class="timeline-thumb" src="http://dimg04.c-ctrip.com/images/1mc4412000mfiy9d37382_W_1280_853_R5_Q70.jpg" alt="🏨 星程酒店" onerror="this.style.display='none'">
+            <p>打车返回西宁市区（约40分钟），沿途可欣赏湟水谷地风光。回到市区后办理入住，稍作休整。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">🚕 塔尔寺→西宁 约30km/40min（16:00-16:40）</span>
+            <span class="meta-tag">🌆 沿途湟水谷地风光</span>
+            <span class="meta-tag">💰 标间405.65/晚 | 大床352.45/晚</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="day1-b" class="route-content">
+        <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:1rem;">下午或晚上抵达，先到酒店入住，然后在市区逛逛莫家街/莫家巷/水井巷品尝美食。</p>
+
+        <div class="timeline-item flight">
+          <span class="time-badge">15:00+</span>
+          <div class="timeline-content">
+            <h4>✈ 落地西宁曹家堡机场</h4>
+            <p>下午或晚上抵达西宁，打车直接前往酒店办理入住。塔尔寺来不及去了，把时间留给西宁市区闲逛和美食。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">✈ 下午/晚上到达</span>
+            <span class="meta-tag">🚕 机场→酒店 打车约30min</span>
+          </div>
+        </div>
+
+        <div class="timeline-item hotel">
+          <span class="time-badge">16:00+</span>
+          <div class="timeline-content">
+            <h4>🏨 入住星程酒店 · 市区闲逛</h4>
+      <img class="timeline-thumb" src="http://dimg04.c-ctrip.com/images/1mc4412000mfiy9d37382_W_1280_853_R5_Q70.jpg" alt="🏨 星程酒店" onerror="this.style.display='none'">
+            <p>到达宾馆办理入住，放好行李稍作休整。下午/晚上可以自由活动，逛逛莫家街或水井巷，品尝酿皮、手抓羊肉、酸奶、甜醅等西宁特色美食。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">💰 标间405.65/晚 | 大床352.45/晚</span>
+            <span class="meta-tag">📍 西宁市区</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 公共部分：晚餐 ===== -->
+    <div style="background:linear-gradient(135deg, #1abc9c15, #1abc9c05); border-radius:var(--radius-md); padding:1rem; margin:1.5rem 0 1rem; border:1px dashed #1abc9c44;">
+      <h4 style="color:#1abc9c; margin-bottom:0.3rem; font-size:1rem;">👥 无论哪种方案，晚上汇合</h4>
+      <p style="font-size:0.9rem; color:var(--text-light);">晚上在西宁市区汇合，19:00在伊然轩青海特色美食用晚餐，先到的同学可以先聚起来一起吃，为明天的青海大环线做准备。</p>
+    </div>
+
+    <div class="timeline-item meal">
+      <span class="time-badge">19:00</span>
+      <div class="timeline-content">
+        <h4>🍽 晚餐 · 伊然轩青海特色美食</h4>
+      <img class="timeline-thumb" src="http://q1.itc.cn/images01/20250303/a601bd479a2a4d499b6c3ff27f73eceb.jpeg" alt=" 伊然轩青海特色美食" onerror="this.style.display='none'">
+        <p>19:00在西宁市区用晚餐，先到的同学可以先聚起来一起吃。推荐伊然轩青海特色美食，品尝正宗青海风味：<strong>手抓羊肉</strong>（高原羔羊清水煮制，蘸椒盐食用，肉质鲜嫩）、<strong>炕锅羊肉</strong>（羊肉配土豆洋葱在铁锅中炕至焦香）、<strong>羊杂汤</strong>（羊肚羊肝羊心慢炖，汤白味鲜，暖胃驱寒）。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">💰 自理 人均80-100元</span>
+        <span class="meta-tag">⏰ 用餐约1h（19:00-20:00）</span>
+        <span class="meta-tag">👥 先到先聚，不强制全员</span>
+      </div>
+    </div>
+
+  <div class="info-grid">
+    <div class="info-card tips">
+      <h4>💡 Tips</h4>
+      <p>西宁海拔约2200米，注意适应高原气候，不要剧烈运动。第一天饮食宜清淡，多喝热水</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARALLAX DIVIDER ===== -->
+<div class="parallax-divider">
+  <img src="http://gips0.baidu.com/it/u=3678146316,825333144&fm=3074&app=3074&f=JPEG" alt="茶卡盐湖" id="parallax1">
+  <div class="overlay-text">
+    <h3>茶卡盐湖 · 德令哈</h3>
+    <p>天空之镜，穿越高原，戈壁新城</p>
+  </div>
+</div>
+
+<!-- ===== DAY 2 ===== -->
+<section class="day-section day2" id="day2">
+  <div class="day-header">
+    <div class="day-number">
+      <span class="day-text">DAY</span>
+      <span class="day-date">02</span>
+    </div>
+    <div class="day-info">
+      <h2>7.25 西宁 → 青海湖环湖 → 茶卡 → 德令哈</h2>
+      <span class="route-tag">🏨 西宁 → 🌊 二郎剑 → 茶卡镇 → 🧂 茶卡盐湖 → 🏙 德令哈</span>
+      <span class="drive-info">🚗 全天约590km / 8h</span>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://q1.itc.cn/q_70/images03/20241107/a8d46063ad1345f284c990ccdbb703be.jpeg" alt="青海湖" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%232e86c1%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>青海湖</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">青海湖</div>
+        <div class="overlay-desc">7月油菜花盛开，湛蓝湖水与金黄花海交相辉映</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="http://gips0.baidu.com/it/u=3678146316,825333144&fm=3074&app=3074&f=JPEG" alt="茶卡盐湖" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%232e86c1%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>茶卡盐湖</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">茶卡盐湖 · 天空之镜</div>
+        <div class="overlay-desc">人与天空融为一体的梦幻倒影世界</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily Route Map -->
+  <div class="daily-amap">
+    <div class="daily-amap-title">🗺 DAY 2 · 西宁→二郎剑→茶卡→德令哈</div>
+    <div id="qh-day-2" class="daily-amap-container"></div>
+    <div class="daily-amap-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
+    </div>
+    <div class="daily-amap-nav">
+      <div class="nav-title">🧭 点击路线跳转高德导航</div>
+      <div class="nav-links">
+        <a href="https://uri.amap.com/direction?from=101.775,36.623,星程酒店&to=100.60,36.85,二郎剑&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🏨 西宁</span><span class="mnl-arrow">→</span><span class="mnl-to">🌊 二郎剑</span><span class="mnl-dist">230km · 3h</span></a>
+        <a href="https://uri.amap.com/direction?from=100.60,36.85,二郎剑&to=99.09,36.73,茶卡镇&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🌊 二郎剑</span><span class="mnl-arrow">→</span><span class="mnl-to">🍽 茶卡镇</span><span class="mnl-dist">160km · 2.5h</span></a>
+        <a href="https://uri.amap.com/direction?from=99.09,36.73,茶卡镇&to=99.08,36.72,茶卡盐湖&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍽 茶卡镇</span><span class="mnl-arrow">→</span><span class="mnl-to">🧂 茶卡盐湖</span><span class="mnl-dist">3km</span></a>
+        <a href="https://uri.amap.com/direction?from=99.08,36.72,茶卡盐湖&to=97.365,37.370,汉庭优佳&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🧂 茶卡盐湖</span><span class="mnl-arrow">→</span><span class="mnl-to">🏙 德令哈</span><span class="mnl-dist">200km · 2.5h</span></a>
+      </div>
+    </div>
+    <div class="daily-amap-summary">全天约590km · 二郎剑青海湖·茶卡门票60元+小火车50元 · 戈壁公路·德令哈海拔2980m</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item meal">
+      <span class="time-badge">08:30</span>
+      <div class="timeline-content">
+        <h4>🍳 酒店早餐</h4>
+        <p>早起在酒店享用早餐，为今天的青海湖之行养精蓄锐。吃饱喝足，准备出发！</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">⏰ 早餐约30min（07:00-07:30）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">07:30</span>
+      <div class="timeline-content">
+        <h4> 西宁 → 二郎剑景区</h4>
+      <img class="timeline-thumb" src="http://b0.bdstatic.com/ugc/mq1zaO1qX4-E6TXOainrZw5d33287188504014063972bf93206f2c.jpg" alt="西宁 → 二郎剑" onerror="this.style.display='none'">
+        <p>早餐后从西宁出发，沿G6高速转G109国道直奔青海湖二郎剑景区。沿途经过日月山，高原草原风光壮丽，7月油菜花盛开。约3小时直达青海湖主景区。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 西宁→二郎剑 约230km/3h（07:30-10:30）沿G6+G109</span>
+        <span class="meta-tag">🌅 沿途日月山</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">10:30</span>
+      <div class="timeline-content">
+        <h4>🌊 二郎剑景区 · 青海湖主景区</h4>
+      <img class="timeline-thumb" src="http://gips0.baidu.com/it/u=124276377,1612488934&fm=3074&app=3074&f=JPEG" alt="🌊 二郎剑景区" onerror="this.style.display='none'">
+        <p>抵达青海湖主景区二郎剑，沿南岸环湖公路游览。7月是青海湖最美的季节，湖畔大片金黄的油菜花田与湛蓝湖水交相辉映，随手一拍都是大片。可沿湖边栈道漫步，近距离感受青海湖的壮阔。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🌊 游览约1.5h（10:30-12:00）</span>
+        <span class="meta-tag">📸 7月油菜花盛开</span>
+      </div>
+    </div>
+
+    <div class="timeline-item meal">
+      <span class="time-badge">12:00</span>
+      <div class="timeline-content">
+        <h4>🍽 午餐 · 二郎剑/青海湖周边</h4>
+      <img class="timeline-thumb" src="http://gips3.baidu.com/it/u=3890082332,604886767&fm=3074&app=3074&f=JPEG?w=1080&h=1410&type=normal&func=" alt="🍽 午餐 · 青海湖周边" onerror="this.style.display='none'">
+        <p>游览完二郎剑景区，先在青海湖畔用午餐，时间更从容。推荐当地特色美食：<strong>牦牛肉拉面</strong>（高原牦牛肉汤底配手工拉面，暖胃解乏）、<strong>羊肠面</strong>（青海特色，羊肠配手工面片，汤鲜味浓）、<strong>牦牛酸奶</strong>（浓郁醇厚，比普通酸奶更香滑）、<strong>青海土火锅</strong>（铜锅炭火，牦牛肉配各种菌菇蔬菜涮煮，暖身滋补）。二郎剑景区周边餐饮配套成熟，选择丰富。人均50-80元，吃饱再翻越橡皮山前往茶卡。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🍽 用餐约40min（12:00-12:40）</span>
+        <span class="meta-tag">💰 自理 人均50-80元</span>
+        <span class="meta-tag">🍖 推荐：牦牛肉拉面/羊肠面/牦牛酸奶/青海土火锅</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">15:10</span>
+      <div class="timeline-content">
+        <h4>🧂 茶卡盐湖 · 天空之镜</h4>
+      <img class="timeline-thumb" src="http://gips0.baidu.com/it/u=3678146316,825333144&fm=3074&app=3074&f=JPEG" alt="🧂 茶卡盐湖 · 天空之镜" onerror="this.style.display='none'">
+        <p>抵达茶卡盐湖，体验"天空之镜"的梦幻倒影。建议穿亮色衣服，带防水鞋可走入盐湖。乘坐小火车穿越盐田，沿途风景独特。在盐湖中拍照留念，感受人与天空融为一体的奇妙体验。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 午餐后→茶卡盐湖 约160km/2.5h（12:40-15:10）翻越橡皮山</span>
+        <span class="meta-tag">🎫 门票60元+小火车50元</span>
+        <span class="meta-tag">⏰ 游览约2h（15:10-17:10）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item meal">
+      <span class="time-badge">19:45</span>
+      <div class="timeline-content">
+        <h4>🍽 晚餐 · 德令哈市区（团餐）</h4>
+      <img class="timeline-thumb" src="http://q6.itc.cn/images01/20250326/6653c305146a4bf38ba3eef8de7886d5.jpeg" alt="🍽 晚餐·德令哈市区" onerror="this.style.display='none'">
+        <p>到德令哈先吃晚饭！德令哈是海西州首府，当地特色美食推荐：<strong>枸杞羊排</strong>（德令哈招牌，柴达木枸杞炖羊排，鲜甜滋补）、<strong>狗浇尿饼</strong>（青海独有面食，薄饼淋油烙制，外酥里软）、<strong>牛肉面片</strong>（手工面片配牦牛肉汤，暖胃解乏）、<strong>青海酸奶</strong>（当地自制酸奶，配白糖食用，醇厚香滑）。人均60-80元。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 茶卡→德令哈 约200km/2.5h（17:10-19:40）沿G315</span>
+        <span class="meta-tag">👥 团餐（待定）</span>
+        <span class="meta-tag">⏰ 用餐约1h（19:45-20:45）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">20:45</span>
+      <div class="timeline-content">
+        <h4>🏨 入住汉庭优佳德令哈景华湾广场酒店</h4>
+      <img class="timeline-thumb" src="http://dimg04.c-ctrip.com/images/02037120008okhlabCE79_W_1280_853_R5_Q70.jpg" alt="🏨 入住汉庭优佳德令哈景华湾广场酒店" onerror="this.style.display='none'">
+        <p>晚餐后办理入住，放行李休整。酒店设施齐全，好好休息为明天赶路养精蓄锐。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">💰 标间546.11/晚 | 大床495.63/晚</span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="info-grid">
+    <div class="info-card tips">
+      <h4>️ 高原反应提示</h4>
+      <p>今日行程海拔较高：青海湖约3,200m，茶卡盐湖约3,000m，德令哈约2,980m。从西宁（2,200m）快速爬升，部分人可能出现头痛、气短、乏力等高反症状。</p>
+      <p><strong>应对建议：</strong>避免剧烈运动，不要饮酒，多喝热水，感觉不适及时休息。严重时可吸氧缓解。今晚在德令哈好好休息，明天海拔会逐步降低。</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== PARALLAX DIVIDER ===== -->
+<div class="parallax-divider">
+  <img src="http://gips3.baidu.com/it/u=2929689156,936725664&fm=3074&app=3074&f=JPEG" alt="翡翠湖" id="parallax2">
+  <div class="overlay-text">
+    <p>天空之镜，穿越高原，戈壁新城</p>
+  </div>
+</div>
+
+<!-- ===== DAY 3 ===== -->
+<section class="day-section day3" id="day3">
+  <div class="day-header">
+    <div class="day-number">
+      <span class="day-text">DAY</span>
+      <span class="day-date">03</span>
+    </div>
+    <div class="day-info">
+      <h2>7.26 德令哈 → 翡翠湖 → 敦煌 · 沙洲夜市 · 月牙泉日落</h2>
+      <span class="route-tag">🏙 德令哈 → 💎 翡翠湖 → 🏜 敦煌 → 🍽 沙洲夜市 → 🏜️ 沙洲野奢营 → 🌙 月牙泉</span>
+      <span class="drive-info">🚗 全天约550km / 7h</span>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="http://gips3.baidu.com/it/u=2929689156,936725664&fm=3074&app=3074&f=JPEG" alt="翡翠湖" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%231abc9c%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>翡翠湖</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">大柴旦翡翠湖</div>
+        <div class="overlay-desc">碧绿矿质湖水，航拍圣地，宛如翡翠镶嵌在戈壁上</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="http://gips0.baidu.com/it/u=2149244768,605771466&fm=3074&app=3074&f=JPEG?w=1440&h=1050&type=normal&func=" alt="鸣沙山" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%231abc9c%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>鸣沙山</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">月牙泉 · 沙漠日落</div>
+        <div class="overlay-desc">沙漠中的千年清泉，落日余晖映照下的绝美弧线</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Daily Route Map -->
+  <div class="daily-amap">
+    <div class="daily-amap-title">🗺 DAY 3 · 德令哈→翡翠湖→敦煌→沙洲夜市→月牙泉</div>
+    <div id="qh-day-3" class="daily-amap-container"></div>
+    <div class="daily-amap-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
+    </div>
+    <div class="daily-amap-nav">
+      <div class="nav-title">🧭 点击路线跳转高德导航</div>
+      <div class="nav-links">
+        <a href="https://uri.amap.com/direction?from=97.365,37.370,汉庭优佳&to=95.85,37.85,翡翠湖&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🏙 德令哈</span><span class="mnl-arrow">→</span><span class="mnl-to">💎 翡翠湖</span><span class="mnl-dist">250km · 3h</span></a>
+        <a href="https://uri.amap.com/direction?from=95.85,37.85,翡翠湖&to=95.86,37.86,大柴旦&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">💎 翡翠湖</span><span class="mnl-arrow">→</span><span class="mnl-to">🍜 大柴旦</span><span class="mnl-dist">约10km · 15min</span></a>
+        <a href="https://uri.amap.com/direction?from=95.86,37.86,大柴旦&to=94.69,40.05,敦煌&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍜 大柴旦</span><span class="mnl-arrow">→</span><span class="mnl-to">🏜 敦煌</span><span class="mnl-dist">约330km · 3.5h</span></a>
+        <a href="https://uri.amap.com/direction?from=95.86,37.86,大柴旦&to=94.67,40.10,沙洲夜市&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍜 大柴旦</span><span class="mnl-arrow">→</span><span class="mnl-to">🍽 沙洲夜市</span><span class="mnl-dist">约330km · 3.5h</span></a>
+        <a href="https://uri.amap.com/direction?from=94.67,40.10,沙洲夜市&to=94.69,40.05,沙洲野奢营&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍽 沙洲夜市</span><span class="mnl-arrow">→</span><span class="mnl-to">🏜️ 沙洲野奢营</span><span class="mnl-dist">约5km · 10min</span></a>
+        <a href="https://uri.amap.com/direction?from=94.69,40.05,沙洲野奢营&to=94.67,40.05,月牙泉&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🏜️ 沙洲野奢营</span><span class="mnl-arrow">→</span><span class="mnl-to">🌙 月牙泉</span><span class="mnl-dist">约2km · 5min</span></a>
+      </div>
+    </div>
+    <div class="daily-amap-summary">全天约550km · 翡翠湖60元 · 月牙泉110元 · 沙洲夜市 · 住沙洲野奢营</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item meal">
+      <span class="time-badge">08:00</span>
+      <div class="timeline-content">
+        <h4>🍳 酒店早餐</h4>
+        <p>早起享用酒店早餐，为今天的行程储备能量。今天路程较长，早点出发。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🏨 酒店餐厅</span>
+        <span class="meta-tag">⏰ 约30min（08:00-08:30）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">08:30</span>
+      <div class="timeline-content">
+        <h4>🚗 德令哈 → 翡翠湖</h4>
+      <img class="timeline-thumb" src="http://gips3.baidu.com/it/u=4022582139,4121783454&fm=3074&app=3074&f=JPEG" alt="🚗 德令哈 → 翡翠湖" onerror="this.style.display='none'">
+        <p>早餐后出发，驱车前往大柴旦翡翠湖（约2.5h）。沿途穿越柴达木盆地，戈壁风光壮阔，随处可见风力发电的白色风车阵列。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 德令哈→翡翠湖 约250km/2.5h（08:30-11:00）沿G315</span>
+        <span class="meta-tag">🏜 柴达木盆地风光</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">11:00</span>
+      <div class="timeline-content">
+        <h4>💎 大柴旦翡翠湖</h4>
+      <img class="timeline-thumb" src="http://gips0.baidu.com/it/u=265905389,1134435763&fm=3074&app=3074&f=JPEG?w=1080&h=1410&type=normal&func=" alt="💎 大柴旦翡翠湖" onerror="this.style.display='none'">
+        <p>游览翡翠湖（约1.5h），湖水因矿物质呈现碧绿色，如翡翠般镶嵌在戈壁中。适合航拍拍照，颜色随光线变化，非常梦幻。免费景点，人少景美，值得慢慢逛。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🎫 门票60元/人（叶戴林子免票）</span>
+        <span class="meta-tag">📸 航拍圣地</span>
+        <span class="meta-tag">⏰ 游览约1.5h（11:00-12:30）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">12:30</span>
+      <div class="timeline-content">
+        <h4>🚗 翡翠湖 → 大柴旦镇</h4>
+        <p>从翡翠湖出发，前往大柴旦镇用午餐（约30min）。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 翡翠湖→大柴旦 约10km/15min（12:30-12:45）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item meal">
+      <span class="time-badge">12:45</span>
+      <div class="timeline-content">
+        <h4>🍜 午餐 · 大柴旦镇</h4>
+      <img class="timeline-thumb" src="http://b0.bdstatic.com/ugc/wFK__WTEQd4dgl-caC5AxA20ccac4f981ac398a759892b9f25f081.jpg" alt="🍜 午餐 · 大柴旦镇" onerror="this.style.display='none'">
+        <p>抵达大柴旦镇享用正餐。推荐当地特色：<strong>黄焖羊肉</strong>（西北经典，羊肉配土豆粉条焖制，酱香浓郁）、<strong>面片</strong>（手工揪面片配羊肉汤，筋道爽滑）、<strong>粉汤</strong>（羊肉粉汤，热乎暖胃，戈壁赶路的最佳补给）。慢慢吃补充体力，午餐后继续赶路。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">👥 团餐（待定）</span>
+        <span class="meta-tag">⏰ 用餐约1h（12:45-13:45）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">13:45</span>
+      <div class="timeline-content">
+        <h4>🚗 大柴旦 → 敦煌</h4>
+      <img class="timeline-thumb" src="https://q1.itc.cn/q_70/images03/20231217/826f217106ad47f79091a2ad027f8e9a.jpeg" alt="🚗 大柴旦→敦煌" onerror="this.style.display='none'">
+        <p>午餐后从大柴旦出发，沿G315和G30高速直奔敦煌（约3.5h）。途经当金山口、阿克塞，穿越柴达木盆地西段，进入河西走廊最西端。沿途戈壁荒漠风光苍茫壮阔，远处雪山若隐若现。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 大柴旦→敦煌 约330km/3.5h（13:45-17:15）沿G315+G30</span>
+        <span class="meta-tag">🏝 途经当金山口、阿克塞</span>
+      </div>
+    </div>
+
+    <div class="timeline-item meal">
+      <span class="time-badge">17:15</span>
+      <div class="timeline-content">
+        <h4>🍽 晚餐 · 沙洲夜市</h4>
+        <img class="timeline-thumb" src="http://gips0.baidu.com/it/u=4206514472,1614774575&fm=3074&app=3074&f=JPEG?w=1080&h=1050&type=normal&func=" alt="沙洲夜市" onerror="this.style.display='none'">
+        <p>抵达敦煌后直接前往沙洲夜市品尝敦煌美食，推荐：<strong>驴肉黄面</strong>（敦煌招牌，驴肉做卤配手工黄面，筋道鲜香）、<strong>杏皮水</strong>（李广杏干熬制，酸甜冰爽，敦煌必喝）、<strong>烤羊肉串</strong>（戈壁滩上的红柳大串，肉香四溢）、<strong>胡羊焖饼</strong>（薄饼盖在红烧羊肉上，饼吸满肉汁）。夜市烟火气十足，边吃边逛感受敦煌夜生活。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🍽 敦煌特色小吃</span>
+        <span class="meta-tag">⏰ 用餐约1h15min（17:15-18:30）</span>
+        <span class="meta-tag">📍 沙洲南路</span>
+      </div>
+    </div>
+
+    <div class="timeline-item hotel">
+      <span class="time-badge">18:30</span>
+      <div class="timeline-content">
+        <h4>🏜️ 沙洲野奢营 · 入住</h4>
+        <img class="timeline-thumb" src="http://se-feed-bucket.bj.bcebos.com/dd3221b4ad5d2385077cd8b4e6d126bc" alt="沙洲野奢营" onerror="this.style.display='none'">
+        <p>晚餐后前往鸣沙山景区内的沙洲野奢营办理入住，稍作休整后前往月牙泉看日落。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🏜️ 大床/标间599元</span>
+        <span class="meta-tag">📍 鸣沙山景区内</span>
+      </div>
+    </div>
+
+    <div class="timeline-item scenic">
+      <span class="time-badge">19:30</span>
+      <div class="timeline-content">
+        <h4>🌙 月牙泉 · 沙漠日落</h4>
+        <img class="timeline-thumb" src="http://b0.bdstatic.com/ugc/rdJ5Q1Y0tS4D3ChUiwosYwb005c3b6996e367b3ce2136833a055d0.jpg@h_1280" alt="月牙泉日落" onerror="this.style.display='none'">
+        <p>傍晚走进月牙泉景区，登上鸣沙山俯瞰这汪千年清泉。夕阳西下，金色沙脊被染成赤红，月牙泉在暮色中如一弯新月静卧沙怀。日落时分的鸣沙山光线最美，是拍照的绝佳时刻。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🎫 门票110元/人</span>
+        <span class="meta-tag">⏰ 游览约1.5h（19:30-21:00）</span>
+        <span class="meta-tag">📸 日落拍照圣地</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== PARALLAX DIVIDER ===== -->
+<div class="parallax-divider">
+  <img src="http://gips1.baidu.com/it/u=1824905512,3153477892&fm=3074&app=3074&f=JPEG?w=1531&h=1050&type=normal&func=" alt="莫高窟" id="parallax3">
+  <div class="overlay-text">
+    <p>千年佛窟，沙漠绿洲，丝路明珠</p>
+  </div>
+</div>
+
+<!-- ===== DAY 4 ===== -->
+<section class="day-section day4" id="day4">
+  <div class="day-header">
+    <div class="day-number">
+      <span class="day-text">DAY</span>
+      <span class="day-date">04</span>
+    </div>
+    <div class="day-info">
+      <h2>7.27 鸣沙山 → 莫高窟 → 敦煌机场</h2>
+      <span class="route-tag">🐫 鸣沙山 → 🎨 莫高窟 → ✈ 敦煌机场</span>
+      <span class="drive-info">🚗 全天约30km / 0.5h</span>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="http://gips1.baidu.com/it/u=1824905512,3153477892&fm=3074&app=3074&f=JPEG?w=1531&h=1050&type=normal&func=" alt="莫高窟" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23e056a0%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>莫高窟</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">莫高窟 · 千年佛教艺术</div>
+        <div class="overlay-desc">世界文化遗产，千年佛教艺术瑰宝，必须提前预约</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="http://b0.bdstatic.com/ugc/tb3FY6W3LRTrkP-E95IrLgbe3c4dbf3878efd5b027352f0d55c5f9.jpg" alt="鸣沙山" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23e056a0%22 width=%22400%22 height=%22300%22/><text fill=%22white%22 font-size=%2240%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22>鸣沙山</text></svg>'">
+      <div class="overlay">
+        <div class="overlay-title">鸣沙山 · 沙漠奇观</div>
+        <div class="overlay-desc">金色沙脊如锤如刃，踏沙而来，感受大漠的壮阔与柔美</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Daily Route Map -->
+  <div class="daily-amap">
+    <div class="daily-amap-title">🗺 DAY 4 · 鸣沙山 + 敦煌市区 + 莫高窟 + 返程</div>
+    <div id="qh-day-4" class="daily-amap-container"></div>
+    <div class="daily-amap-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>景点</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#FF5722"></span>餐饮</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#4CAF50"></span>住宿</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#9C27B0"></span>交通</span>
+    </div>
+    <div class="daily-amap-nav">
+      <div class="nav-title">🧭 点击路线跳转高德导航</div>
+      <div class="nav-links">
+                <a href="https://uri.amap.com/direction?from=94.67,40.05,鸣沙山&to=94.78,40.14,敦煌市区&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🐫 鸣沙山</span><span class="mnl-arrow">→</span><span class="mnl-to">🍜 敦煌市区</span><span class="mnl-dist">5km · 10min</span></a>
+        <a href="https://uri.amap.com/direction?from=94.78,40.14,敦煌市区&to=94.81,40.04,莫高窟&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🍜 敦煌市区</span><span class="mnl-arrow">→</span><span class="mnl-to">🎨 莫高窟</span><span class="mnl-dist">10km · 15min</span></a>
+        <a href="https://uri.amap.com/direction?from=94.81,40.04,莫高窟&to=94.66,40.14,敦煌机场&type=car&coordinate=gaode&callnative=1" target="_blank" class="map-nav-link"><span class="mnl-from">🎨 莫高窟</span><span class="mnl-arrow">→</span><span class="mnl-to">✈ 敦煌机场</span><span class="mnl-dist">20km · 30min</span></a>
+      </div>
+    </div>
+    <div class="daily-amap-summary">全天约60km · 滑沙50元 · 沙漠摩托100元</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="time-badge">上午</span>
+      <div class="timeline-content">
+        <h4>🏨 睡到自然醒 · 自由活动</h4>
+        <p>今天不赶早，大家睡到自然醒。可以在酒店享用早餐，或者去敦煌市区逛逛沙州市场、敦煌博物馆，悠闲地享受敦煌的早晨。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">📍 酒店/敦煌市区</span>
+        <span class="meta-tag">⏰ 自由安排</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">10:30</span>
+      <div class="timeline-content">
+        <h4>🐫 鸣沙山 · 骑骆驼 + 滑沙 + 摩托</h4>
+      <img class="timeline-thumb" src="http://q5.itc.cn/q_70/images01/20240723/e96d84096d7c4d628a6a003835ecfa5b.png" alt="🏍️ 鸣沙山 · 沙地摩托" onerror="this.style.display='none'">
+        <p>利用门票3天有效的优势再入鸣沙山。骑着骆驼穿越沙漠感受大漠风情；从沙丘顶端滑沙而下体验速度与激情；还可以驾驶沙漠摩托在沙海中驰骋，尽情感受敦煌沙漠的多样乐趣。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🏂 滑沙约30-50元</span>
+        <span class="meta-tag">🏍 沙漠摩托约80-120元</span>
+        <span class="meta-tag">⏰ 约1.5h（10:30-12:00）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item meal">
+      <span class="time-badge">12:00</span>
+      <div class="timeline-content">
+        <h4>🍜 午餐 · 敦煌市区</h4>
+      <img class="timeline-thumb" src="http://q9.itc.cn/q_70/images03/20250812/026db152fc4e4fbcb3de0230e29aa311.jpeg" alt="🍜 午餐·敦煌市区" onerror="this.style.display='none'">
+        <p>中午离开鸣沙山，驱车前往敦煌市区午餐。推荐品尝：<strong>浆水搅团</strong>（甘肃特色，玉米面搅团配浆水酸菜，清爽开胃）、<strong>臊子面</strong>（西北经典面食，肉丁豆腐土豆做臊子，汤宽面薄）、<strong>敦煌瓜</strong>（当地时令瓜果，清甜解腻）。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">👥 团餐（待定）</span>
+        <span class="meta-tag">⏰ 约1h（12:00-13:00）</span>
+        <span class="meta-tag">📍 敦煌市区</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">13:00</span>
+      <div class="timeline-content">
+        <h4>🚗 午餐 → 莫高窟</h4>
+      <img class="timeline-thumb" src="http://gips1.baidu.com/it/u=1166410242,3246629332&fm=3074&app=3074&f=JPEG" alt="🚗 午餐→莫高窟" onerror="this.style.display='none'">
+        <p>午餐后驱车前往莫高窟。建议提前在官网预约A类票（参观8个洞窟+数字展示中心）。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🚗 市区→莫高窟 约10km/15min（13:00-13:45）</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-badge">14:00</span>
+      <div class="timeline-content">
+        <h4>🎨 莫高窟参观</h4>
+      <img class="timeline-thumb" src="http://youimg1.c-ctrip.com/target//100u170000011hscbB8D9.jpg" alt="🎨 莫高窟参观" onerror="this.style.display='none'">
+        <p>先观看数字电影了解莫高窟历史（约20min），然后乘坐摆渡车进入窟区，参观8个实体洞窟，感受千年佛教艺术瑰宝。每窟约5-8分钟，有讲解员带领。</p>
+      </div>
+      <div class="timeline-meta">
+        <span class="meta-tag">🎫 A类票238元/人（自理）</span>
+        <span class="meta-tag">⏰ 游览约2.5h（14:00-16:30）</span>
+        <span class="meta-tag">📍 敦煌市东南25km</span>
+      </div>
+    </div>
+
+    <!-- Route choice tabs -->
+    <div class="route-choice">
+      <div class="route-choice-header">
+        <span class="route-tab active" onclick="switchRoute('day4','a',this)">🅰️ 方案A：当天返程</span>
+        <span class="route-tab" onclick="switchRoute('day4','b',this)">🅱️ 方案B：次日返程</span>
+      </div>
+
+      <div id="day4-a" class="route-content active">
+        <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:1rem;">莫高窟参观结束后，直接包车送至敦煌机场，搭乘傍晚航班返程。</p>
+
+        <div class="timeline-item rental">
+          <span class="time-badge">16:30</span>
+          <div class="timeline-content">
+            <h4>🚗 莫高窟 → 敦煌机场</h4>
+            <p>莫高窟参观结束，直接包车送至敦煌机场，预留充足时间办理值机。包车服务到此结束。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">🚗 莫高窟→机场 约20km/25min（16:30-17:00）</span>
+            <span class="meta-tag">⏰ 值机约30min（17:00-17:30）</span>
+          </div>
+        </div>
+
+        <div class="timeline-item flight">
+          <span class="time-badge">17:30</span>
+          <div class="timeline-content">
+            <h4>✈ 敦煌起飞返程</h4>
+            <p>搭乘返程航班，结束愉快的青海之旅！敦煌机场航班均为经停航班，飞行时间约3-4小时。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">✈ 17:30起飞，建议15:30到机场</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="day4-b" class="route-content">
+        <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:1rem;">行程比较赶？可以选择在敦煌多住一晚，第二天从容返程。第四晚住宿需自行安排哦！</p>
+
+        <div class="timeline-item">
+          <span class="time-badge">17:00</span>
+          <div class="timeline-content">
+            <h4>🏨 返回酒店 · 自由安排</h4>
+            <p>莫高窟参观结束后返回酒店，包车服务结束。可自行在敦煌继续逛逛，如沙州夜市等。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">🚗 莫高窟→酒店 约5km/10min</span>
+            <span class="meta-tag">🏨 第四晚住宿需自行安排</span>
+          </div>
+        </div>
+
+        <div class="timeline-item flight" style="border-left-color: #e056a0;">
+          <span class="time-badge">Day5</span>
+          <div class="timeline-content">
+            <h4>✈ Day5 敦煌返程</h4>
+            <p>次日从容前往敦煌机场，搭乘航班返程。可根据航班时间自由安排上午活动。</p>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag">✈ 自行前往机场</span>
+            <span class="meta-tag">⚠️ 第四晚住宿自理</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card tips" style="margin-top:1rem;">
+    <h4>💡 Tips</h4>
+    <p>莫高窟必须提前在官网预约！敦煌7月白天可达40度，注意防晒补水。鸣沙山建议穿防沙鞋套</p>
+  </div>
+</section>
+
+<!-- ===== PER-PERSON COST BREAKDOWN ===== -->
+<section style="padding:3rem 1rem; max-width:1200px; margin:0 auto;" id="per-person-cost">
+  <h3 style="text-align:center; font-size:1.8rem; color:var(--primary); margin-bottom:0.3rem;">📋 每人费用清单（不含机票和团餐）</h3>
+  <p style="text-align:center; color:var(--text-light); margin-bottom:1.5rem; font-size:0.9rem;">以下为统一预付费用（包车+住宿+门票），发票于行程结束后统一开具</p>
+  <div style="overflow-x:auto;">
+    <table style="width:100%; border-collapse:collapse; font-size:0.85rem; background:var(--white); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-sm);">
+      <thead>
+        <tr style="background:var(--primary); color:white;">
+          <th style="padding:10px 8px; text-align:left; font-weight:600;">姓名</th>
+          <th style="padding:10px 8px; text-align:left; font-weight:600;">房间</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">包车</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">住宿</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">门票</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:700; background:#c0392b;">合计</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:8px;">👤 田佳</td>
+          <td style="padding:8px; font-size:0.8rem;">标间1（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">320</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥2,281.1</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f8f9fa;">
+          <td style="padding:8px;">👤 叶戴林子</td>
+          <td style="padding:8px; font-size:0.8rem;">标间1（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">200 <span style="font-size:0.7rem;color:#27ae60;">(翡翠湖+茶卡免票)</span></td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥2,161.1</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:8px;">👤 刘媛媛</td>
+          <td style="padding:8px; font-size:0.8rem;">标间2（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">320</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥2,281.1</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f8f9fa;">
+          <td style="padding:8px;">👤 欧阳捷</td>
+          <td style="padding:8px; font-size:0.8rem;">标间2（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">320</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥2,281.1</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:8px;">👤 吴康</td>
+          <td style="padding:8px; font-size:0.8rem;">标间3（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">320</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥2,281.1</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f8f9fa;">
+          <td style="padding:8px;">👤 万学文</td>
+          <td style="padding:8px; font-size:0.8rem;">标间3（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">320</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥2,281.1</td>
+        </tr>
+        <tr style="background:#fff3e0;">
+          <td style="padding:8px;">👤 王采冬</td>
+          <td style="padding:8px; font-size:0.8rem;">大床房（星程）</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">1,447.1</td>
+          <td style="padding:8px; text-align:center;">320</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:#c0392b;">¥2,952.8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:1rem; font-size:0.8rem; color:var(--text-light); line-height:1.8; padding:0.8rem; background:#f8f9fa; border-radius:8px;">
+    <strong>费用说明：</strong><br>
+    • 包车：¥8,300 ÷ 7人 = ¥1,185.7/人<br>
+    • 住宿（标间合住）：(405.65 + 546.11 + 599) ÷ 2 = ¥775.4/人<br>
+    • 住宿（大床单住）：352.45 + 495.63 + 599 = ¥1,447.1/人<br>
+    • 门票：青海湖90 + 茶卡60 + 翡翠湖60 + 鸣沙山110 = ¥320/人（叶戴林子翡翠湖+茶卡免票 = ¥200）<br>
+    • 莫高窟：A类票238元/人（需自行预约，费用自理）<br>
+    • 以上费用为统一预付，发票于行程结束后统一开具<br>
+    • 以上不含往返机票、D1三餐、D2-D4团餐（待定）
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <h3>青海线之旅 · FY27</h3>
+  <p>
+    7.24-7.27（可延至7.28） 四天三晚 · 上海/杭州/广州出发<br>
+    西宁 → 青海湖 → 茶卡 → 德令哈 → 翡翠湖 → 敦煌<br>
+    全程约1270公里 · Day1自行打车 · Day2-4包车9座商务车<br><br>
+    祝旅途愉快！
+  </p>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox">
+  <img src="" alt="Preview" id="lightboxImg">
+</div>
+
+<!-- AMap Diagnostic Panel -->
+<div id="amap-diag-panel" style="position:fixed;bottom:0;left:0;right:0;max-height:150px;overflow-y:auto;background:rgba(20,20,30,0.95);color:#aaa;padding:8px 12px;font-family:monospace;font-size:11px;z-index:99999;border-top:2px solid #3498db;backdrop-filter:blur(5px);">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+    <span style="color:#3498db;font-weight:bold;font-size:12px;">AMap Debug Log</span>
+    <button onclick="this.parentElement.parentElement.style.display='none'" style="background:none;border:1px solid #555;color:#888;padding:2px 8px;cursor:pointer;border-radius:3px;font-size:10px;">Close</button>
+  </div>
+</div>
+
+
+
+</body>
+</html>
