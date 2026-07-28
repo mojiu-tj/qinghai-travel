@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青海线 · 费用清单</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a365d;
+    --primary-light: #2c5282;
+    --accent: #dd6b20;
+    --accent-light: #ed8936;
+    --text: #2d3748;
+    --text-light: #4a5568;
+    --light: #f7fafc;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --radius-md: 16px;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
+    line-height: 1.6;
+    padding: 1rem 0.4rem;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--primary-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 768px) {
+    body { padding: 0.5rem 0.2rem; }
+    #per-person-cost table { font-size: 0.72rem !important; }
+    #per-person-cost th, #per-person-cost td { padding: 6px 4px !important; }
+    #per-person-cost h3 { font-size: 1rem !important; }
+  }
+</style>
+</head>
+<body>
+
+<a href="https://mojiu-tj.github.io/qinghai-travel/" class="back-link">&larr; 返回行程攻略</a>
+
+<section style="max-width: 100%; margin: 0 auto;" id="per-person-cost">
+  <h3 style="text-align:center; font-size:1.8rem; color:var(--primary); margin-bottom:0.3rem;">📋 每人费用清单（不含机票和团餐）</h3>
+  <p style="text-align:center; color:var(--text-light); margin-bottom:1.5rem; font-size:0.9rem;">以下为统一预付费用（包车+住宿+门票），发票于行程结束后统一开具</p>
+  <div style="overflow-x:auto;">
+    <table style="width:100%; border-collapse:collapse; font-size:0.85rem; background:var(--white); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-sm);">
+      <thead>
+        <tr style="background:var(--primary); color:white;">
+          <th style="padding:10px 8px; text-align:left; font-weight:600;">姓名</th>
+          <th style="padding:10px 8px; text-align:left; font-weight:600;">房间</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">包车</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">住宿</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">门票</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">其他费用</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600;">小计</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:600; background:#27ae60;">outing经费</th>
+          <th style="padding:10px 8px; text-align:center; font-weight:700; background:#c0392b;">合计</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:8px;">👤 田佳</td>
+          <td style="padding:8px; font-size:0.8rem;">标间1</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">488</td>
+          <td style="padding:8px; text-align:center;">109.46</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">2,558.56</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥1,358.56</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f8f9fa;">
+          <td style="padding:8px;">👤 叶戴林子</td>
+          <td style="padding:8px; font-size:0.8rem;">标间1</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">418 <span style="font-size:0.7rem;color:#27ae60;">(茶卡门票50+翡翠湖免票)</span></td>
+          <td style="padding:8px; text-align:center;">109.47</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">2,488.57</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥1,288.57</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:8px;">👤 刘媛媛</td>
+          <td style="padding:8px; font-size:0.8rem;">标间2</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">488</td>
+          <td style="padding:8px; text-align:center;">25.33</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">2,474.43</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥1,274.43</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f8f9fa;">
+          <td style="padding:8px;">👤 欧阳捷</td>
+          <td style="padding:8px; font-size:0.8rem;">标间2</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">488</td>
+          <td style="padding:8px; text-align:center;">40.79</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">2,489.89</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥1,289.89</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee;">
+          <td style="padding:8px;">👤 吴康</td>
+          <td style="padding:8px; font-size:0.8rem;">标间3</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">488</td>
+          <td style="padding:8px; text-align:center;">29.33</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">2,478.43</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥1,278.43</td>
+        </tr>
+        <tr style="border-bottom:1px solid #eee; background:#f8f9fa;">
+          <td style="padding:8px;">👤 万学文</td>
+          <td style="padding:8px; font-size:0.8rem;">标间3</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">775.4</td>
+          <td style="padding:8px; text-align:center;">488</td>
+          <td style="padding:8px; text-align:center;">29.33</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">2,478.43</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:var(--accent);">¥1,278.43</td>
+        </tr>
+        <tr style="background:#fff3e0;">
+          <td style="padding:8px;">👤 王采冬</td>
+          <td style="padding:8px; font-size:0.8rem;">大床房</td>
+          <td style="padding:8px; text-align:center;">1,185.7</td>
+          <td style="padding:8px; text-align:center;">1,447.1</td>
+          <td style="padding:8px; text-align:center;">488</td>
+          <td style="padding:8px; text-align:center;">10.32</td>
+          <td style="padding:8px; text-align:center; font-weight:600;">3,131.12</td>
+          <td style="padding:8px; text-align:center; color:#27ae60; font-weight:600;">-1,200</td>
+          <td style="padding:8px; text-align:center; font-weight:700; color:#c0392b;">¥1,931.12</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:1rem; font-size:0.8rem; color:var(--text-light); line-height:1.8; padding:0.8rem; background:#f8f9fa; border-radius:8px;">
+    <strong>费用说明：</strong><br>
+    • 包车：¥8,300 ÷ 7人 = ¥1,185.7/人<br>
+    • 住宿（标间合住）：(405.65 + 546.11 + 599) ÷ 2 = ¥775.4/人<br>
+    • 住宿（大床单住）：352.45 + 495.63 + 599 = ¥1,447.1/人<br>
+    • 门票：青海湖90 + 茶卡(门票60+小火车118) + 翡翠湖(门票60+小火车50) + 鸣沙山110 = ¥488/人（叶戴林子：茶卡门票50+翡翠湖免票 = ¥418）<br>
+    • 莫高窟：A类票238元/人（需自行预约，费用自理）<br>
+    • outing经费：¥1,200/人，从合计中扣减<br>
+    • 以上费用为统一预付，发票于行程结束后统一开具<br>
+    • 以上不含往返机票、D1三餐、D2-D4团餐（待定）
+  </div>
+</section>
+
+</body>
+</html>
